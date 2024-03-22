@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Auto Rows</title>
+    <style>
+
+        .container{
+            display:grid;
+            grid-template-columns: 200px 200px 200px; /*the value indicate only is 3*/
+            grid-template-rows: 300px 300px ; /*the value of indicate only is 2*/
+        }
+      .container > div{
+            background-color: blue;
+            border:5px solid brown;
+            color:white;
+            font-size:2rem;
+        }
+
+        .container2{
+            display:grid;
+            grid-template-columns: 200px 200px 200px; /*the value indicate only is 3*/
+            grid-template-rows: 300px 300px ; /*the value of indicate only is 2*/
+            grid-auto-rows:400px /*it uses when adding more rows*/
+        }
+      .container2 > div{
+            background-color: blue;
+            border:5px solid brown;
+            color:white;
+            font-size:2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Grid-Auto-Rows</h1>
+    <p>It use when the div is no value in Grid-template-colums and grid-template-rows</p>
+    <h2>CSS Code without grid-auto-rows:</h2>
+    <img src="./noGridAutoRows.JPG" alt="No Grid auto rows">
+
+    <h2>HTML Code:</h2>
+    <img src="./htmlCode.JPG" alt="html Code">
+    <h2>Output:</h2>
+        <h3>When the div 7 and 8 didnt indicate in grid template row the size of div will be depend on size of item.</h3>
+        <div class="container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7 Our Rows didn't indicate in grid-template-rows.</div> <!--dont have value in grid templates-->
+            <div>8 Our Rows didn't indicate in grid-template-rows.</div> <!--dont have value in grid templates-->
+        </div>
+        <hr>
+    <h2>CSS Code with grid-auto-rows:</h2>
+    <img src="./GridAutoRows.JPG" alt="grid-auto-rows">
+    <h2>Output:</h2>
+    <h3>When the div 7 and 8 didnt indicate in grid template row but it uses grid-auto-rows</h3>
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7 Our Rows didn't indicate in grid-template-rows. Uses grid-auto-rows.</div> <!--dont have value in grid templates-->
+        <div>8 Our Rows didn't indicate in grid-template-rows. Uses grid-auto-rows.</div> <!--dont have value in grid templates-->
+    </div>
+</body>
+</html>

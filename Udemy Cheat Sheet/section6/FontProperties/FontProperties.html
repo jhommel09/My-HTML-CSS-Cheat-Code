@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Properties</title>
+
+    <!--Embedded code for font from fonts.google.com-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+
+
+    <style>
+            .font-properties{
+                width:700px;
+                height:350px;
+            }
+            
+            #font-em{
+                font-size:2em; /*100% of parent size (1em x parent size) */
+            }
+
+          #font-family{
+            font-family:'Anta', sans-serif; /*uses two or more fonts*/
+          }
+
+          div{
+            border: black 1px solid;
+            Width:700px;
+            height: 200px;
+          }
+
+          #align-left{
+            text-align:left; /*text alignment*/
+            font-weight:normal; /*font-weight*/
+          }
+
+          #align-center{
+            text-align:center; /*text alignment*/
+            font-weight:bolder; /*font-weight*/
+          }
+
+          #align-right{
+            text-align:right; /*text alignment*/
+            font-weight:900; /*font-weight*/
+          }
+
+    </style>
+</head>
+<body>
+    <h1>Font Properties</h1>
+    <i><a href="https://www.w3schools.com/cssref/pr_font_font.php" target="_blank">Click here</a> for more details.</i>
+    <hr>
+    <h2>Sample of font properties:</h2>
+    <ul>
+        <li>
+           <h3>Font-Size</h3>
+           <img class="font-properties" src="./images/Fontsize.jpeg" alt="Font size">
+           <br>
+           <h4>Code:</h4>
+            <img src="./images/fontsizecode.JPG" alt="Font size Code">
+           <h4>Output:</h4>
+           <h2 id="font-em">This font size EM.</h2>
+        </li>
+
+        <li>
+            <h3>Font-family</h3>
+            <i>Note: You can choose font-family <a href="https://fonts.google.com" target="_blank">here</a>.</i><br>
+            <img class="font-properties" src="./images/fontfamily.JPG" alt="font family">
+            <br>
+            <h4>Code:</h4>
+            <img src="./images/fontfamilyembed.JPG" alt="font family embedded">
+            <h4>Output:</h4>
+            <h2 id="font-family">This is sample of font family.</h2>
+        </li>
+        
+        <li>
+            <h3>Text-Align and Font-Weight</h3>
+            <img class="font-properties" src="./images/fontweight.JPG" alt="Font Weight">
+            <img class="font-properties" src="./images/textAlign.JPG" alt="text align">
+            <br>
+            <h4>Code:</h4>
+            <img src="./images/textalignweight.JPG" alt="text align and weight">
+            <h4>Output:</h4>
+            <div>
+                <h2 id="align-left">I'm at left with normal font weight.</h2> 
+                <h2 id="align-center">I'm at center with lighter font weight.</h2>
+                <h2 id="align-right">I'm at right with 900 font weight.</h2>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

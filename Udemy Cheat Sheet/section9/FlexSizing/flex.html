@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex: grow shrink basis</title>
+
+    <style>
+        .container{
+            display:flex;
+            border: 1px solid black;
+            width:90%;
+            height:600px;
+        }
+
+        .container > *{
+            margin:10px;
+            border: 1px solid blue;
+            flex: 0 1 400px; /*short code for flex: grow shrink basis*/
+
+
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <h2>Shrink(min-width) and grow(max-width):</h2>
+    <p>Note: short code: <b>flex: 1 1 0;</b> for value: <b>flex: grow shrink basis</b>. </p>
+    <h2>Code:</h2>
+    <img src="./flexsizingshordcode.JPG" alt="Flex sizing short Code.">
+    <h2>Output:</h2>
+    <div class="container">
+        <div class="div1"> Im using width:700px and max-width:200px; for sizing. </div>
+        <div class="div2"> Im using width:700px and max-width:200px; for sizing. </div>
+        <div class="div3"> Im using width:700px and max-width:200px; for sizing. </div>
+    </div>
+</body>
+</html>

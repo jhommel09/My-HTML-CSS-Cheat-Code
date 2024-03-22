@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Direction</title>
+
+    <style>
+
+        .red{
+            background-color: red;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+
+        .orange{
+            background-color: orange;
+        }
+
+        .yellow{
+            background-color: yellow;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        .container1{
+            display:flex;
+            flex-direction:row; /*default direction of flex but from left to right direction*/
+            gap:10px;
+        }
+
+        .container1 > div{
+            flex-basis:100px; /*flex basis will depends on flex-direction*/
+        }
+        
+
+        .container2{
+            display:inline-flex;
+            flex-direction: column; /*direction of flex from top to bottom*/
+        }
+
+        .container2 > div{
+            flex-basis:100px;/*flex basis will depends on flex-direction*/
+            font-size:20px;
+        }
+       
+
+    </style>
+
+</head>
+<body>
+    <h1>Flex Direction </h1>
+    <p>There have two flex direction the column who going down and row who going right.</p>
+    <p>Flex-basis will depend on flex-direction.</p>
+    <hr>
+    <h2>Code: flex - direction:row this is the default direction</h2>
+    <img src="./flexDirectionRow.JPG" alt="flex direction row">
+    <br>
+    <h2>Output:</h2>
+    <div class="container1">
+        <div class="red">Red</div>
+        <div class="blue">Blue</div>
+        <div class="orange">Orange</div>
+        <div class="yellow">Yellow</div>
+        <div class="green">Green</div>
+    </div>
+    <hr>
+    <h2>Code: flex - direction:column </h2>
+    <img src="./flexDirectionColumn.JPG" alt="flex direction column">
+    <br>
+    <h2>Output:</h2>
+    <div class="container2">
+        <div class="red">Red</div>
+        <div class="blue">Blue</div>
+        <div class="orange">Orange</div>
+        <div class="yellow">Yellow</div>
+        <div class="green">Green</div>
+
+    </div>
+</body>
+</html>

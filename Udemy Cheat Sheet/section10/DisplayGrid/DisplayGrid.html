@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Grid</title>
+    <style>
+        .container{
+            width:400px;
+            display:grid; /*use of display grid*/
+            grid-template-columns: 1fr 1fr 1fr 1fr; /* use for left to right direction 1 to 5*/
+            grid-template-rows: 1fr 1fr; /*use for downward 1 down 5*/
+        }
+
+        .white{
+            background-color: brown;
+            width:100px;
+            height:100px;
+            font-size:3rem;
+            color:white;
+        }
+
+        .black{
+            background-color:black;
+            width:100px;
+            height:100px;
+            font-size:3rem;
+            color:white;
+        }
+
+        .container2{
+            width:400px;
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);/*repeat grid-template-columns: repeat(how many times to repeat, size);*/
+            grid-template-rows: repeat(2, 1fr); /*repeat grid-template-rows: repeat(how many times to repeat, size);*/
+        }
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <h1>Display Grid</h1>
+    <hr>
+    <h2>Css Code:</h2>
+    <img src="./displayGrid.JPG" alt="Display Grid Code">
+    <h2>HTML Code:</h2>
+    <img src="./displaygridhtml.JPG" alt="display grid html">
+    <h2>Output:</h2>
+    <div class="container">
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">3</div>
+        <div class="black">4</div>
+        <div class="black">5</div>
+        <div class="white">6</div>
+        <div class="black">7</div>
+        <div class="white">8</div>
+    </div>
+    <hr>
+    <br>
+
+    <h2>Repeat Code for Grid:</h2>
+    <p>Good to use when have the same repeating value.</p>
+    <h2>Css Code:</h2>
+    <img src="./displayGridrepeat.JPG" alt="Display Grid repeat">
+    <h2>Html Code:</h2>
+    <img src="./displaygridhtml.JPG" alt="Display Grid html">
+    <h2>Output:</h2>
+    <div class="container2">
+        <div class="white">1</div>
+        <div class="black">2</div>
+        <div class="white">3</div>
+        <div class="black">4</div>
+        <div class="black">5</div>
+        <div class="white">6</div>
+        <div class="black">7</div>
+        <div class="white">8</div>
+    </div>
+</body>
+</html>

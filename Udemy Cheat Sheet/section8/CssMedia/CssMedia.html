@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media CSS for Media Responsive</title>
+
+    <style>
+        body{
+            background-color: aqua;
+        }
+
+        #paragraph-output{
+            font-size:50px;
+        }
+         img{
+            width:1000px;
+            height:700px;
+         }
+
+        @media (max-width:420px) and (min-width:1px){ /*use for more responsive website*/
+            /*you will indicate the elements, class, id for the responsive*/
+            body{
+                background-color: plum;
+            }
+            #paragraph-output{
+                font-size:20px;
+            }
+
+            img{
+            width:350px;
+            height:150px;
+            }
+        }
+
+        @media (max-width:760px) and (min-width:421px){
+            body{
+                background-color: seagreen;
+            }
+            #paragraph-output{
+                font-size:30px;
+            }
+
+            img{
+            width:650px;
+            height:350px;
+            }
+        }
+
+        @media (max-width:1260px) and (min-width:761px){
+            body{
+                background-color: red;
+            }
+            #paragraph-output{
+                font-size:40px;
+            }
+
+            img{
+            width:800px;
+            height:450px;
+            }
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Media CSS</h1>
+    <p>Use for responsive for responsive it depends in the width of the browser.</p>
+    <hr>
+    <h2>Code:</h2>
+    <img src="./CssMediaCode.JPG" alt="Css Media Code">
+    <br>
+    <h2>Output:</h2>
+    <p id="paragraph-output">This is the output of the width</p>
+</body>
+</html>

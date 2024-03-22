@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinMax Sizing</title>
+
+    <style>
+
+        .container{
+            width:80%;
+            display:grid;
+            grid-template-columns: 200px minmax(200px, 600px); /*minmax use for min. value and max value of the grid*/
+            grid-template-rows: 200px 400px;
+        }
+
+        .container > div{
+            background-color: blue;
+            border:5px solid brown;
+            color:white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>MinMax Sizing</h1>
+    <hr>
+    <h2>Css Code:</h2>
+    <img src="./minmaxcode.JPG" alt="MinMax Code">
+    <h2>HTML Code:</h2>
+    <img src="./minmaxhtml.JPG" alt="Minmax html Code">
+    <h2>Output:</h2>
+    <h3>Move the browser size.</h3>
+    <div class="container">
+        <div>200px</div>
+        <div>min:200px max:600px</div>
+        <div>200px</div>
+        <div>400px</div>
+    </div>
+
+</body>
+</html>

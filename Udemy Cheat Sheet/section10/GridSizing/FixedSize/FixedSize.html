@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed and Fractional Sizing</title>
+    
+    <style>
+        .container{
+            width:1000px;
+            height:500px;
+            
+            border: 1px solid black;
+            display:grid;
+            grid-template-columns: 200px 600px; /*use for sizing and value depends how many columns you want and the size*/
+            grid-template-rows: 200px 200px; /*use for sizing and value depends how many rows you want and the size*/
+        }
+
+        .container > div{
+            background-color: aqua;
+            border: 2px solid black;
+        }
+
+
+        .container2{
+            width:80%;
+            
+            border: 1px solid black;
+            display:grid;
+            grid-template-columns: 1fr 2fr; /*fractional sizing will depends on the size of parent.*/
+            grid-template-rows: 1fr 2fr; /*fractional sizing will depends on the size of parent.*/
+        }
+
+        .container2 > div{
+            background-color: aqua;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fixed and Fractional Sizing</h1>
+    <p>Click <a href="https://appbrewery.github.io/grid-sizing/" target="_blank">here</a> for guide of grid sizing.</p>
+    <hr>
+    <h2>Css Code: Fixed Sizing</h2>
+    <img src="./fixedsizedGrid.JPG" alt="fixed sized grid">
+    <h2>Html Code:</h2>
+    <img src="./fixedsizehtml.JPG" alt="Fixed size html">
+    <h2>Output:</h2>
+
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <br>
+    <hr>
+
+    <h2>Css Code: Fractional Sizing</h2>
+    <h3>Fractional sizing will depends on parent size.</h3>
+    <img src="./fractionalsize.JPG" alt="fractional sized grid">
+    <h2>Html Code:</h2>
+    <img src="./fixedsizehtml.JPG" alt="Fixed size html">
+    <h2>Output:</h2>
+
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    
+
+
+</body>
+</html>

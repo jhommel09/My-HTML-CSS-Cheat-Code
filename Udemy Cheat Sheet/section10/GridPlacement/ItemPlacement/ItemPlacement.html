@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .container{
+            width:80%;
+            display:grid;
+            gap:1rem;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            border: 1px solid black;
+        }
+
+        .container > div{
+            background-color: aqua;
+            border: 1px solid red;
+            margin:10px;
+            height:200px;
+            font-size:3rem;
+        }
+
+        .item{
+            display:flex; /*its more flexible to use in grid item placement.*/
+            align-items:center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Item Placement in Grid</h1>
+    <hr>
+    <h2>Using display:flex:</h2>
+    <h3>CSS Code:</h3>
+    <img src="./gridflex.JPG" alt="flex for item placement ing grid">
+    <h3>HTML Code:</h3>
+    <img src="./htmlcode.JPG" alt="HTML code">
+    <h3>Output:</h3>
+    <div class="container">
+        <div class="item cowboy">🤠</div>
+        <div class="item astronaut">👨‍🚀</div>
+        <div class="item book">📖</div>
+      </div>
+
+</body>
+</html>

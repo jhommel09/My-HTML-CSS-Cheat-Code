@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Sizing</title>
+
+    <style>
+        .container1 {
+            border:1px solid black;
+            width:80%;
+            height:300px;
+            display:flex;
+            gap:10px;
+            margin-top:30px;
+
+        }
+
+        .container1 > div{
+            margin-left:10px;
+            margin-top:10px;
+            border: 1px solid blue;
+        }
+
+        .div1{
+            width:200px; /*use of width: */
+            height:200px;
+        }
+
+        .div2{      
+            flex-basis:200px; /*use of flex-basis: it will depends on flex-direction. */
+            height:200px;
+        }
+
+   
+
+        .container2{
+            border:1px solid black;
+            width:80%;
+            height:300px;
+            display:flex;
+            gap:10px;
+            margin-top:30px;
+
+        }
+
+        .container2 > div{
+            margin-top:10px;
+            margin-left: 10px;
+            border: 1px solid blue;
+        }    
+
+        .div3{
+            width:700px;
+            max-width:200px;/*use of max-width: */
+            height:200px;
+        }
+
+        .div4{
+            width:700px;
+            min-width:300px; /*use of min-width: */
+            height:200px;
+        }
+
+      
+
+    </style>
+</head>
+<body>
+    <h1>Flex Sizing</h1>
+    <p>Flex shortcode <a href="./flex.html">click here</a>.</p>
+    <hr>
+    Output:
+    <h2>Width and flex-basis:</h2>
+    <h2>Code:</h2>
+    <img src="./flexsizingWidthBasis.JPG" alt="Flex sizing Width and flex-basis">
+    <h2>Output:</h2>
+    <div class="container1">
+        <div class="div1"> Im using width:200px; for sizing. </div>
+        <div class="div2"> Im using flex-basis:200px; for sizing. </div>
+    </div>
+    <hr>
+    <h2>max - width and min - width: </h2>
+    <h2>Code:</h2>
+    <img src="./flexsizingMaxMin-width.JPG" alt="Flex sizing max-width and min-width">
+    <h2>Output:</h2>
+    <div class="container2">
+        <div class="div3"> Im using width:700px and max-width:200px; for sizing. </div>
+        <div class="div4"> Im using width:700px and min-width:300px; for sizing. </div>
+    </div>
+
+   
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 3 - Anchor Elements, Image, nesting, Order and Unorder List </title>
+    <style>
+        body{
+            margin:10px;
+        }
+        .container{
+            display:flex;
+            flex-direction: column;
+        }
+        .AnchorElements, .Image, .Nesting, .OrderUnorderList {
+            width:1000px;
+            border: 1px solid black;
+            margin-bottom:10px;
+        }
+
+        .AnchorElements > *{
+            margin:10px;
+        }
+
+        .Image > *{
+            margin:10px;
+        }
+
+       .Nesting > * {
+        margin:10px;
+       }
+
+       .OrderUnorderList > * {
+        margin:10px;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Section 3 - Anchor Elements, Image, nesting, Order and Unorder List</h1>
+    <hr/>
+    <div class="container">
+        <div class="AnchorElements">
+            <h2>Anchor Elements Code:</h2>
+            <img src="./anchor.jpeg" alt="Anchor Elements Code">
+            <hr/>
+            <h2>Output:</h2>
+            <h3>List of Website</h3>
+             <ul>
+                <li><a href="https://developer.mozilla.org/en-US/">Mozilla mdn web development</a> - use this website for more web developement guide. </li><!--website linking -->
+                <li><a href="https://www.youtube.com">Youtube</a></li>
+                <li><a href="https://www.facebook.com">Facebook</a></li>
+            </ul>
+        </div>
+        <div class="Image">
+            <h2>Images HTML Code:</h2>
+            <img src="./imagecode.jpeg" alt="Image html Code">
+            <hr/>
+            <h2>Output:</h2>
+            <img src="./forest.jpeg" alt="Forest">
+        </div>
+        <div class="Nesting">
+            <h2>Nesting HTML Code:</h2>
+            <img src="./nesting-and-indentation.jpeg" alt="Nesting and indentation html Code">
+            <hr/>
+            <h2>Output:</h2>
+            <ul>
+                <li>A
+                    <ol><!--Start of nesting-->
+                        <li>AA</li>
+                        <li>AB</li>
+                        <li>AC
+                            <ul> <!--Identation to easy recognize the nesting-->
+                                <li>AC1</li>
+                                <li>AC2</li>
+                                <li>AC3</li>
+                                <li>AC4</li>
+                                <li>AC5</li>
+                            </ul><!--Identation-->
+                        </li>
+                        <li>AD
+                            <ul>
+                                <li>ADA
+                                    <ol>
+                                        <li>ADA1</li>
+                                        <li>ADA2</li>
+                                        <li>ADA3</li>
+                                        <li>ADA4</li>
+                                        
+                                    </ol>
+                                </li>
+                                <li>ADB</li>
+                                <li>ADC</li>
+                                <li>ADD</li>
+                                <li>ADE</li>
+    
+                            </ul>
+                        </li>
+                    </ol><!--End of nesting-->
+                </li>
+                <li>B</li>
+                <li>C</li>
+                <li>D</li>
+                <li>E</li>
+            </ul>
+        </div>
+        <div class="OrderUnorderList">
+            <h2>Order and Unorder List Code:</h2>
+            <img src="./orderunorderlist.JPG" alt="unorder and orderlist html Code:">
+            <hr/>
+            <h2>Output:</h2>
+            <ol> <h3>OrderList</h3> <!--OrderList-->
+                <li>Mix the milk with the yeast, sugar, eggs.</li><!--List Item--> 
+               <li>Melt the butter and add to the mixture.</li>
+               <li>Add in the flour and mix until combined into a dough.</li>
+                <li>Knead the dough for 10 minuites.</li> 
+            </ol>
+            <ul> <h3>UnorderList</h3><!--Unorder List-->
+                <li>¾ cup warm milk</li> <!--List Item--> 
+                <li>2 ¼ teaspoons yeast</li> 
+                <li>¼ cup granulated sugar</li>
+            </ul>
+            
+        </div>
+    </div>
+</body>
+</html>

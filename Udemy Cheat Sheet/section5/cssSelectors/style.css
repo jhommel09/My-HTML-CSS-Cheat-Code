@@ -1,0 +1,16 @@
+li{ /*Element selector*/
+    font-size:20px;
+}
+
+#id-selector{ /*Id Selector*/
+    color:blue;
+}
+
+b[draggable="true"]{/*Attribute Selector*/
+    color:red;
+}
+
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+

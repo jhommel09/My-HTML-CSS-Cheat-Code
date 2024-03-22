@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+    <style>
+
+
+        .inline
+        {
+            display:inline; /*Inline display*/
+            background-color: blueviolet;
+            width:200px; /* width and height didnt affect because inline use only what inside the paragraph.*/
+            height:200px;
+        }
+
+        div >p{
+            font-size:2rem;
+            
+        }
+
+
+        .block1{
+            display:block; /*when block uses its go to next line downward.*/
+            width:200px; /*width and height can edit.*/
+            height:200px;
+            background-color: yellowgreen;
+        }
+
+        .block2{
+            
+            display:block;
+            width:200px;
+            height:200px;
+            background-color: green;
+        }
+
+        .inline-block1{ 
+            display: inline-block; /*it will inline and when the browser adjust it will adjust the position.*/
+            width:600px;
+            height:300px;
+            background-color: aqua;
+        }
+
+        .inline-block2{
+            display: inline-block;
+            width:600px;
+            height:300px;
+            background-color: greenyellow;
+        }
+
+        .inline-block3{
+            display: inline-block;
+            width:600px;
+            height:300px;
+            background-color: rebeccapurple;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>CSS Display</h1>
+    <p>Note: CSS Display properties: inline, inline-block, block. Click <a href="https://appbrewery.github.io/css-display/" target="_blank">here</a>.</p>
+    <hr>
+    <h2>Inline</h2>
+    <h3>Code:</h3>
+    <img src="./inlineDisplay.JPG" alt="Inline Display Code">
+    <h3>Ouput:</h3>
+    <div>
+    <p class="inline">This is Inline Display. Its only affect the words in paragraph.</p>
+    </div>
+    <br>
+    <h2>Block</h2>
+    <h3>Code:</h3>
+    <img src="./blockDisplay.JPG" alt="block display code">
+    <div>
+        <p class="block1">This is Block!</p>
+        <p class="block2">When used block its go downward.</p>
+    </div>
+    <br>
+    <h2>Inline-Block</h2>
+    <h3>Code:</h3>
+    <img src="./inline-blockDisplay.JPG" alt="Inline Block Display">
+    <div>
+        <p class="inline-block1">Inline block 1. Adjust the web browser. </p>
+        <p class ="inline-block2">Inline block 2</p>
+        <p class="inline-block3"> Inline block 3</p>
+    </div>
+    
+</body>
+</html>
